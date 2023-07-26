@@ -1,8 +1,16 @@
 ---
+    export interface Props{
+        name: string,
+        profesion:string,
+        description:string,
+        img: string
+    }
+    
     const {
         name,
         profesion,
-        description
+        description,
+        img
     } = Astro.props
 ---
 <a class=" hover:scale-105 inline-block transition-all hover:contrast-125 hover:shadow-2xl" href="/Eva">
