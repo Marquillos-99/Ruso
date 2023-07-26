@@ -1,15 +1,22 @@
 ---
+import MembersItem from "./MembersItem.astro";
     const members = [
         {
             name:'eva',
             profesion:'Ama de casa',
-            img:''
+            img:'https://i.pinimg.com/1200x/ac/e6/cf/ace6cfc54424429f3ed4783e99b708e3.jpg'
         }
     ]
 ---
 
 <ul class="grid grid-cols-2 md:grid-cols-4 gap-3">
-    <li>
-
-    </li>
+    {
+        members.map(({name, profesion, img}) => {
+            return(
+                <li>
+                    <MembersItem name={name} profesion={profesion} img={img} />
+                </li>
+            )
+        })
+    }
 </ul>
