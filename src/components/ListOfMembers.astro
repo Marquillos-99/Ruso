@@ -1,15 +1,9 @@
 ---
 import MembersItem from "./MembersItem.astro";
-    const members = [
-        {
-            name:'eva',
-            profesion:'Ama de casa',
-            img:'https://st4.depositphotos.com/8230070/39417/v/600/depositphotos_394177114-stock-illustration-happy-grandparents-day-kind-granny.jpg',
-        }
-    ]
+import {members} from '../data/members'
 ---
 
-<ul class="grid grid-cols-2 md:grid-cols-4 gap-3">
+<ul class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10">
     {
         members.map(({name, profesion, img}) => {
             return(
